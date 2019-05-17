@@ -85,15 +85,14 @@ body {
 }
  
 
-#join-bottom .overlay ,
-.overlay {
-	   /*background: #efeff4;*/
+#join-bottom .overlay {
+	   background: #f6f6f7;
+	   padding: 50px 0;
 }
 
-#home .overlay {
+.home-page .overlay {
 	background: url('../images/home-banner.jpg') no-repeat;
     background-attachment: fixed;
-    background-size: contain;
     position: relative;
 	width: 100%;
 	height: 1080px;
@@ -137,14 +136,28 @@ canvas {
 	position: static;
 	background: none!important;
 }
-
+.about-us-page .navbar-fixed-top  {
+    background: #fff!important;
+    padding-bottom: 20px;
+}
+ 
+.join-us-page .navbar-fixed-top {
+    background: #fff;
+    padding-bottom: 20px;
+}
+.about-us-page .header-content h4 {
+	font-size: 20px;
+}
 .nav-sec .navbar-nav {
 	padding-left: 15px;
     text-align: left;
 	padding-right: 0;
     margin: 50px 0 0 115px;
 }
-
+.project-page .header-content h1,
+.project-page .header-content h4 {
+	text-align: center;
+}
 .nav-sec .navbar-nav>li>a {
 }
 
@@ -517,11 +530,19 @@ canvas {
 }
 
 .header-content h4 {
-	color: #e9e9e9;
-    font-size: 24px;
+	color: #fff;
+    font-size: 30px;
     line-height: 35px;
     font-weight: 100;
     margin-top: 35px;
+}
+.joinus .header-content h1 {
+	color: #3a3a3a;
+    font-size: 26px;
+}
+.joinus .header-content h4 {
+	color: #3a3a3a;
+    font-size: 18px;
 }
 #location .header-content h4 {
     color: #e8e8e8;
@@ -2150,12 +2171,51 @@ a.demo {
 	transition: all .4s ease-in-out;
 	box-shadow: 0 12px 20px rgba(0,0,0,.15)
 }
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 51px;
+  height: 51px;
+  margin: 6px;
+  border: 6px solid #7e5cf6;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #7e5cf6 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 #loading-mask {
-	background: -webkit-linear-gradient(-45deg,#5f2c82,#ca4966);
+	/*background: -webkit-linear-gradient(-45deg,#5f2c82,#ca4966);
 	background: -moz-linear-gradient(-45deg,#5f2c82,#ca4966);
 	background: -o-linear-gradient(-45deg,#5f2c82,#ca4966);
-	background: linear-gradient(-45deg,#5f2c82,#ca4966);
+	background: linear-gradient(-45deg,#5f2c82,#ca4966);*/
+/*    background: -webkit-linear-gradient(90deg, #c1affa, #7e5cf6);
+    background: -o-linear-gradient(90deg, #c1affa, #7e5cf6);
+    background: -moz-linear-gradient(90deg, #c1affa, #7e5cf6);
+    background: linear-gradient(90deg, #c1affa, #7e5cf6);*/
 	height: 100%;
 	opacity: 1;
 	filter: alpha(opacity=100);
@@ -2187,9 +2247,9 @@ a.demo {
 	margin: 0 auto 70px;
 	position: relative;
 	top: 40%;
-	transform-style: preserve-3d;
+/*	transform-style: preserve-3d;
 	-webkit-animation: 2.3s loading-2 infinite;
-	animation: 2.3s loading-2 infinite
+	animation: 2.3s loading-2 infinite*/
 }
 
 .loader .loader-inner {
@@ -2284,6 +2344,12 @@ a.demo {
 	margin: 0;
 	padding: 0;
 }
+.mt30 {
+	margin-top: 30px;
+}
+.mt40 {
+	margin-top: 40px;
+}
 .mt80 {
 	margin-top: 80px;
 }
@@ -2373,45 +2439,59 @@ a.demo {
 
 
 /*联系我们*/
-.fund-page #banner .overlay,
+.project-page #banner .overlay,
 .contact-us-page #banner .overlay,
 .about-us-page #banner .overlay,
 .join-us-page #banner .overlay {
 	width: 100%;
-	height: 500px;
-    background-color: #1e5ca5!important;
+    min-height: 490px;
+    /*background-color: #1e5ca5!important;*/
     background-attachment: fixed!important;
-    background-position: 0 80px!important;
+    /*background-position: 0 80px!important;*/
+    background-position: 0 170px!important;
 }
 .contact-us-page #banner .overlay {
-	background: url('../img/contact-banner.jpg') no-repeat;
+	background: url('../images/contact-banner.jpg') no-repeat;
 }
-.about-us-page #banner .overlay {
-	background: url('../img/about-banner.jpg') no-repeat;
+.about-us-page {
+    background: url(../images/about-banner.jpg) no-repeat;
 }
-.join-us-page #banner .overlay {
-	background: url('../img/join-banner.jpg') no-repeat;
+.about-us-page #banner {
+	text-align: center;
+}
+.about-us-page .header-content {
+	display: block;
+}
+.about-us-page .header-content h1 {
+    justify-content: center;
+}
+.join-us-page #boon .overlay {
+	background: url('../images/job-banner.jpg') no-repeat;
+	margin-top: 0;
 }
 
-.fund-page #banner .overlay {
-	background: url('../img/fund-banner.jpg') no-repeat;
+.project-page #banner .overlay {
+	background: url('../images/project-banner.jpg') no-repeat;
 }
 .fund-ad-page #banner .overlay {
-	background: url('../img/fund-ad-banner.jpg') no-repeat;
+	background: url('../images/fund-ad-banner.jpg') no-repeat;
 }
 .fund-beautiful-page #banner .overlay {
-	background: url('../img/fund-beautiful-banner.jpg') no-repeat;
+	background: url('../images/fund-beautiful-banner.jpg') no-repeat;
 }
 .fund-trade-page #banner .overlay {
-	background: url('../img/fund-trade-banner.jpg') no-repeat;
+	background: url('../images/fund-trade-banner.jpg') no-repeat;
 }
 .fund-fashion-page #banner .overlay {
-	background: url('../img/fund-fashion-banner.jpg') no-repeat;
+	background: url('../images/fund-fashion-banner.jpg') no-repeat;
 }
-
+#boon .container {
+	margin-top: 20%;
+}
 .common-item {
 	margin: 50px 0 0 0;
 }
+#boon .container,
 .common-item .container,
 .common-item .container {
 	background-color: #fff;
@@ -2420,22 +2500,56 @@ a.demo {
 	padding: 50px 0 0 30px;
     margin: 0;
 }
-
+#youshi .row {
+	position: relative;
+    width: 85%!important;
+    float: right;
+}
 #youshi .header-inner {
-	background: url('../img/contact-bg-youshi.jpg') no-repeat left top;
-	width: 559px;
-	height: 149px;
+	padding: 0;
 }
-#company .header-inner {
-	background: url('../img/about-bg-company.jpg') no-repeat left top;
-	width: 559px;
-	height: 149px;
+#youshi {
+	position: relative;
 }
-
-#staff .header-inner {
-	background: url('../img/about-bg-staff.jpg') no-repeat left top;
-	height: 149px;
-    padding: 50px 0 0 0;
+#youshi .left-img{
+	position: absolute;
+    width: 1067px;
+    height: 522px;
+    left: -34%;
+    top: 7%;
+    background: url(../images/contact-01.jpg) no-repeat;
+}
+#youshi .txt-bottom {
+    padding: 28% 0 0 8%;
+}
+#youshi .txt-bottom li {
+    float: left;
+    width: 45%;
+    margin-left: 5%;
+}
+#youshi .hover-cont h6 {
+	font-size: 20px;
+	color: #000;
+}
+#youshi p {
+	font-size: 16px;
+	line-height: 28px;
+	color: #333;
+}
+#youshi  p.more {
+    border-left: 7px solid #7e5cf6;
+    padding-left: 20px;
+    line-height: 35px;
+    font-size: 24px;
+    color: #000;
+    margin-top: 50px;
+}
+#youshi .ico-arrow-left {
+    background: url(../images/icons/ico-arrow-left.png) no-repeat;
+    width: 32px;
+    height: 32px;
+    display: block;
+    margin: 10px 0 0 30px;
 }
 #duty .duty-img-right {
     margin: 250px 0 0 0!Important;
@@ -2454,7 +2568,7 @@ a.demo {
 .common-item .header-content h4 {
 	color: #666;
 	font-size: 16px;
-    line-height: 24px;
+    line-height: 30px;
 }
 .common-item .photo-header img {
 	position: static;
@@ -2488,7 +2602,7 @@ a.demo {
 }
 #company .header-content h4 ,
 #staff .header-content h4 {
-    margin: 60px 30px 0 0;
+    margin: 30px 30px 0 0;
 }
 
 .common-item .header-content h3 {
@@ -2499,11 +2613,31 @@ a.demo {
 	background: #fff;
 	padding-bottom: 50px;
 }
-#contact-us .photo-header img {
+#contact-us img {
 	float: none;
-	margin-top: 50px;
+	margin-top: 30px;
 }
-
+.contact-box {
+	padding: 70px 50px;
+	margin-top: 30px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.contact-box a,
+.contact-box p {
+	font-size: 22px;
+	color: #fff;
+	text-decoration: none;
+	margin: 0;
+}
+.contact-box p:first-child {
+    margin: 0 0 20px 0;
+    padding-bottom: 20px;
+	font-size: 30px;
+	border-bottom: 1px solid #fff;
+}
 #contact-us .header-content h1 {
 	font-weight: normal;
 }
@@ -2660,7 +2794,7 @@ a.demo {
     visibility: visible!important;
 	height: auto!important;
 }
-.home-title {
+.banner-box 。home-title {
     background: url(../images/icons/home-title.png) no-repeat center;
     background-size: contain;
     height: 80px;
@@ -2671,16 +2805,77 @@ a.demo {
     height: 482px;
 
 }
-
-
-
-
-
-
-
-
-
-
+div#timeline {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+}
+#timeline li {
+	border: none;
+    background-color: #f8f8f8;
+	margin: 0;
+}
+#timeline li  p {
+	color: #424242;
+    line-height: 28px;
+    margin: 0;
+}
+#timeline li p:first-child {
+	height: 56px;
+    margin: 0 0 30px 0;
+}
+#timeline li:first-child p:first-child {
+	line-height: 56px;
+}
+#timeline li .year {
+    border-bottom: 2px solid #987bff;
+    position: relative;
+    margin: 0 0 20px 0;
+    color: #3f3f3f;
+    font-size: 22px;
+}
+#timeline li .year:after {
+	content: '';
+	display: block;
+	height: 12px;
+	width: 4px;
+	margin: 0 auto;
+	background-color: #987bff;
+}
+#aboutus {
+	padding: 100px 0;
+}
+#aboutus .container {
+	font-size: 0;
+}
+#aboutus img:nth-child(1) {
+	box-shadow: -10px -10px 40px #bfb8b8;
+}
+#aboutus img:nth-child(4) {
+	box-shadow: 10px 0 40px #bfb8b8;
+}
+#aboutus img:nth-child(5) {
+	box-shadow: -10px 10px 40px #bfb8b8;
+}
+#project .row p {
+    font-size: 16px;
+    color: #666;
+    line-height: 30px;
+    width: 60%;
+    margin: 0 auto;
+}
+#project .row p.big {
+    font-size: 30px;
+    color: #4f4f4f;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+#project .row img {
+	display: block;
+	margin: 40px auto 100px;
+}
+.right-part {
+    margin: 150px 0 0 0;
+}
 
 
 
@@ -3024,7 +3219,7 @@ a.demo {
 }
 
 @media only screen and (max-width:767px) {
-	.about .mobile-features .features-slider:after,.photo-header img {
+	.about .mobile-features .features-slider:after {
 		display: none
 	}
 
@@ -3258,18 +3453,21 @@ a.demo {
 	}
 }
 @media only screen and ( max-width:769px) {
+
+	.home-page .overlay {
+	    background-size: contain;
+	}
 	#home .overlay {
 	    height: 430px;
 	}
 	.banner-box {
 		top: 17%;
 	}
-	.home-title {
-	    height: 30px;
+	.home-page .home-title img {
+		width: 90%;
 	}
 	.banner-box button,
-	.scroll-down,
-	.navbar-brand img {
+	.scroll-down {
 		display: none;
 	}
 	.support .detail li {
@@ -3284,6 +3482,11 @@ a.demo {
         width: 45%!important;
         text-align: center;
     }
+
+	#aboutus .container img {
+		display: block;
+		margin: 0 auto;
+	}
 }
 
 @media only screen and (max-width:480px) {
@@ -3296,9 +3499,12 @@ a.demo {
 	.product-list ul li {
 		border-right: none;
 	}
+	.join-us-page .navbar-fixed-top,
+	.about-us-page .navbar-fixed-top, 
 	.navbar-fixed-top {
-		position: fixed;
-		background-color: #373d41!important;
+	    position: fixed;
+	    background: #373d41!important;
+	    padding-bottom: 0;
 	}
 	.nav-sec .container>.navbar-header {
 		margin: 0;
@@ -3318,6 +3524,20 @@ a.demo {
 	#home .overlay {
 	    background-position: 0 50px;
     	height: 280px;
+	}
+	.contact-us-page .overlay,
+	.project-page .overlay,
+	.join-us-page .overlay {
+		height: auto!important;
+	}
+	.contact-us-page #banner .overlay,
+	.project-page #banner .overlay {
+    	background-position: 0 50px!important;
+    	min-height: 150px;
+	}
+ 
+	.project-page #banner .header-inner {
+	    margin: 8% 0 0;
 	}
 	#support .overlay { 
 		padding: 0;
@@ -3353,6 +3573,10 @@ a.demo {
 	#support .detail li:nth-child(2) .hover-cont:after {
 		right: 0;
 	}
+	#project .row img,
+	.project-page .header-content h1 img,
+	#aboutus .container img ,
+	#tech .detail li img ,
 	#support .detail li img {
 		width: 100%;
 	}
@@ -3369,9 +3593,22 @@ a.demo {
 	    color: #999;
 	    margin: 0;
 	}
+	#project .row img {
+	    margin: 40px auto 40px;
+	}
+	#project .row p {
+	    width: 85%;
+	}
+	#project .row p.big {
+	    font-size: 24px;
+	}
+	#job h5,
 	#earth h5, #world h5, #tech .detail h5 {
 	    font-size: 20px;
 	    margin: 0 auto 20px;
+	}
+	#job h5 {
+		text-align: center;
 	}
 	#tech .overlay {
 		background-color: #f6f7f7;
@@ -3388,9 +3625,6 @@ a.demo {
 	}
 	#tech .detail li {
 		margin-bottom: 10px;
-	}
-	#tech .detail li img {
-		width: 100%;
 	}
 	#tech .detail .hover-cont h6,
 	#tech .detail .hover-cont p {
@@ -3435,6 +3669,7 @@ a.demo {
 		background: url('../images/icons/ico-pro.jpg') no-repeat;
     	background-size: contain;
 	}
+	.programme .tab button:after,
 	.mobile-navs dt:after,
 	#tech .detail li h6:after {
 		background: url(../images/icons/arrow_down.png) no-repeat;
@@ -3448,6 +3683,7 @@ a.demo {
     	margin: 10px 10px 0 0;
     	transition: all ease .5s;
     }
+    .programme .tab button.active:after,
     #tech .detail li.opened h6:after,
     .mobile-navs .opened dt:after {
 		filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
@@ -3506,6 +3742,172 @@ a.demo {
     #footer {
         padding-bottom: 50px;
     }
+    .about-us-page {
+	    background-size: 100% 5%;
+	}
+	.about-us-page #banner {
+		margin-top: -57%;
+	}
+	.about-us-page .header-content h4 {
+	    font-size: 14px;
+	}
+	.about-us-page .header-content h1 img {
+		width: 60%;
+	}
+	#timeline {
+		overflow-x: auto;
+	}
+	#timeline .product-list {
+		width: 1200px;
+	}
+	#timeline li:first-child p:first-child {
+	    line-height: 18px;
+	    font-size: 12px;
+	}
+	#timeline li p {
+		font-size: 12px;
+	}
+	.mobile-btn {
+	    text-align: center;
+	    margin: 20px 0 0;
+		background: url("../images/icons/ico-scroll.png") no-repeat;
+		width: 70px;
+		height: 48px;
+		display: block;
+		margin: 0 auto;
+	}
+	.btn-right {
+		margin-left: 20px;
+		filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+	   -moz-transform: rotate(180deg);
+	   -o-transform: rotate(180deg);
+	   -webkit-transform: rotate(180deg);
+	    transform: rotate(180deg);
+	}
+	#aboutus {
+	    padding: 50px 0;
+	}
+	.join-us-page #boon .overlay {
+	    background: url(../images/job-banner-m.jpg) no-repeat;
+    	background-size: contain;
+    	margin-top: 50px;
+	}
+	.joinus .container {
+	    margin-top: 40%!important;
+	}
+	.left-part {
+	    width: 70%;
+	    float: left;
+	}
+	.right-part {
+	    margin: 50px 0 0 0;
+	    float: left;
+	    width: 30%;
+    	padding: 0;
+	}
+	.joinus .header-content h4 {
+	    margin: 0;
+	    line-height: 22px;
+	    font-size: 12px!important;
+	    text-align: left;
+	}
+	.joinus .header-inner {
+		margin: 0;
+	}
+	.joinus .header-content h1 {
+	    font-size: 20px;
+	    text-align: left;
+	    margin-bottom: 10px;
+	}
+	.why-choose-our .product-list li .icon {
+	    background: -webkit-linear-gradient(90deg, #c1affa, #7e5cf6);
+	    background: -o-linear-gradient(90deg, #c1affa, #7e5cf6);
+	    background: -moz-linear-gradient(90deg, #c1affa, #7e5cf6);
+	    background: linear-gradient(90deg, #c1affa, #7e5cf6);
+	}
+	.why-choose-our .product-list ul li .icon p {
+		color: #fff;
+	}
+	#earth .product-list li .info {
+		background: #fff;
+	}
+	.why-choose-our .product-list li {
+	    width: 250px!important;
+	    margin: 10px 10px 0 0!important;
+    	box-shadow: 0 0 10px #a9a9b9;
+	}
+	.why-choose-our ul {
+		width: 1060px;
+	}
+	.why-choose-our .product-list {
+		overflow-x: auto;
+    	border: none;
+	}
+	.programme .tab {
+	    width: 100%;
+	    border-right: none;
+	}
+	.programme .tab a, .programme .tab button {
+	    background-color: #fff;
+	    border-bottom: 1px solid #e0d9d9;
+	    height: 45px;
+	    line-height: 45px;
+    	margin-bottom: 10px;
+	    font-size: 16px;
+	    text-align: left;
+		text-indent: 40px;
+		color: #333;
+	}
+	.footer-nav a.active {
+		color: #7e5cf6!important;
+	}
+	#job .container {
+    	padding: 0 15px!important;
+	}
+	.programme .tab a:hover, 
+	.programme .tab a.active, 
+	.programme .tab button:hover, 
+	.programme .tab button.active {
+		border: none;
+	}
+	.programme {
+	    padding: 20px 0;
+	}
+	.project-page #advantage .product-list ul li {
+		width: 25%!important;
+	}
+	#contact-us h5, #youshi h5 {
+	    font-size: 24px;
+	}
+	.contact-us-page #youshi .row {
+	    width: 100%!important;
+	    float: none; 
+    	padding: 0 0 0 6%;
+	}
+	#youshi .ico-arrow-left {
+		display: none;
+	}
+	#youshi .left-img {
+	    width: 100%;
+	    position: static;
+	    margin: 0 auto;
+	    display: block;
+	    text-align: center;
+	}
+	#youshi .txt-bottom li {
+	    float: none;
+	    width: 100%;
+	}
+	#youshi p {
+	    font-size: 14px; 
+    	margin-bottom: 30px;
+	}
+	#youshi p.more {
+	    line-height: 30px;
+	    font-size: 18px;
+	    color: #000;
+	    margin-top: 30px;
+	}
 }
 @media only screen and (max-width: 330px) {
 	.section-title h3 {

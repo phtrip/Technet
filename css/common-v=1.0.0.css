@@ -148,6 +148,7 @@
     border: none;
     overflow: hidden;
 }
+
 #earth .product-list li .info {
     border: 1px solid #c6c6c6;
     border-top: none;
@@ -156,6 +157,7 @@
     padding: 50px;
     text-align: left;
 }
+
 #earth .product-list li .info span {
     font-size: 24px;
     color: #3b3b3b;
@@ -182,6 +184,58 @@
     margin-top: 10px;
     color: #ababab;
 }
+.why-choose-our {
+    padding: 50px 0;
+}
+.why-choose-our .product-list li .info,
+.why-choose-our  {
+    background: #f6f6f7;
+}
+.why-choose-our .product-list {
+    border: 1px solid #e4e4e4;
+}
+.why-choose-our .product-list li {
+    width: 25%!important;
+    overflow: visible!important;
+    margin: 0!important;
+    transition: all ease .5s;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+}
+.why-choose-our .product-list li .info {
+    border: none!important;
+    min-height: 205px;
+}
+.why-choose-our .product-list ul li .icon {
+    padding: 40px 0;
+    text-align: center;
+}
+.why-choose-our .product-list ul li .icon p {
+    color: #31373b;
+    font-size: 18px;
+}
+
+#earth .product-list li .info p {
+    color: #7c7c7c;
+    font-size: 16px;
+    line-height: 28px;
+}
+.why-choose-our .product-list li:hover {
+    box-shadow: 0 0 10px #ccc;
+    background: #ccc!Important;
+}
+.why-choose-our .product-list li:hover > .info{
+    background: #fff;
+}
+.why-choose-our .product-list li:hover > .icon{
+    background: -webkit-linear-gradient(90deg, #c1affa, #7e5cf6);
+    background: -o-linear-gradient(90deg, #c1affa, #7e5cf6);
+    background: -moz-linear-gradient(90deg, #c1affa, #7e5cf6);
+    background: linear-gradient(90deg, #c1affa, #7e5cf6);
+}
+.why-choose-our .product-list li:hover > .icon p {
+    color: #fff;
+}
 #advantage .product-list ul li,
 #advantage {
     background: #f7f8fa;
@@ -205,15 +259,17 @@
     background-size: 100% 100%;
     overflow: hidden;
     width: 100%;
+    padding: 100px 0;
 }
  
 .programme .tab {
     text-align: center;
     float: left;
     position: relative;
+    margin-top: 65px;
     z-index: 10;
-    width: 15%;
-    background-color: #fff;
+    width: 15%; 
+    border-right: 2px solid #d2d2d2;
 }
 
 .programme .tab a,
@@ -226,7 +282,8 @@
     line-height: 50px;
     transition: all 0.6s;
     cursor: pointer;
-    border: 1px solid #efeff4;
+    background: none;
+    border: none;
     outline: none;
     text-decoration: none;
 }
@@ -273,15 +330,28 @@
 .programme .detail .tab-cont h5 {
     margin-bottom: 20px;
 }
+#job .container {
+    padding: 0 50px!important;
+    background: url('../images/job-bg.jpg') no-repeat;
+    height: 580px;
+}
 #job .tab-cont button {
-    background-color: #e93830;
-    height: 45px;
-    line-height: 45px;
-    text-align: center;
+    margin: 50px auto;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
     color: #fff;
+    text-align: center;
     font-size: 16px;
-    width: 180px;
-    margin-top: 50px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -moz-border-radius: 5px;
+    background: -webkit-linear-gradient(90deg, #c1affa, #7e5cf6);
+    background: -o-linear-gradient(90deg, #c1affa, #7e5cf6);
+    background: -moz-linear-gradient(90deg, #c1affa, #7e5cf6);
+    background: linear-gradient(90deg, #c1affa, #7e5cf6);
     border: none;
 }
 
@@ -542,6 +612,27 @@
     color: #525252;
     text-align: center;
     margin: 0 auto 40px;
+}
+#contact-us {
+    box-shadow: 0 -5px 20px #ece6e6;    
+    padding: 50px 0;
+}
+#contact-us h5,
+#youshi h5 {
+    font-size: 40px;
+    color: #000;
+    text-align: center;
+    margin: 0 auto 40px;
+}
+.project-page h5 {
+    font-size: 30px;
+    color: #394959;
+    text-align: center;
+    margin: 0 auto 40px;
+}
+#youshi .row h5 {
+    margin-left: 5%;
+    text-align: left;
 }
 #tech .detail li:nth-child(1) .hover-cont {
      left: 14%;
