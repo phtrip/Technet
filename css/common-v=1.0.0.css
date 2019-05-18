@@ -814,7 +814,8 @@
         background-color: #f1f0ee;
         position: fixed;
         bottom: 0;
-        width: 100%;
+        width: 100%;    
+        z-index: 99;
         box-shadow: 0 0 16px #9a9696;
     }
     .footer-nav a {

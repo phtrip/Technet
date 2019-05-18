@@ -2490,7 +2490,7 @@ a.demo {
     margin: 10px 0 0 30px;
 } 
 .common-item .header-content h4 {
-	color: #666;
+	color: #3a3a3a;
 	font-size: 16px;
     line-height: 30px;
 }
@@ -3947,11 +3947,22 @@ div#timeline {
 	#tech .detail .hover-cont p {
 		display: none;
 	}
+	.support .detail li:hover > img {
+		transform: scale(1);
+	    -webkit-transform: scale(1);
+	    -moz-transform: scale(1);
+	    -ms-transform: scale(1);
+	    -o-transform: scale(1);
+	}
 	.mobile-navs,
 	#tech .detail li.opened img,
 	#tech .detail .opened .hover-cont p {
 		display: block!important;
 	} 
+	#tech .detail .opened .hover-cont p {
+	    text-align: center;
+	    margin: 20px 0 ;
+	}
 	#tech .detail li h6:before {
 		content: '';
 		width: 28px;
@@ -4166,13 +4177,23 @@ div#timeline {
 	}
 	.programme .tab a, .programme .tab button {
 	    background-color: #fff;
-    	border-bottom: 1px solid #ccc!important;
-	    height: 45px;
-	    line-height: 45px;
-    	margin-bottom: 10px;
-	    text-align: center; 
-		color: #333;
-		font-size: 12px;
+	    border-bottom: 1px solid #ccc!important;
+	    height: 30px;
+	    line-height: 30px;
+	    margin-bottom: 10px;
+	    text-align: center;
+	    color: #333;
+	    font-size: 12px;
+	    border: 1px solid #ccc;
+	    margin: 0 -1px 0 0; 
+	}
+	.programme .tab button:first-child {
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+	}
+	.programme .tab button:last-child {
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
 	}
 	.footer-nav a.active {
 		color: #7e5cf6!important;
@@ -4186,16 +4207,19 @@ div#timeline {
 	.programme .tab a.active, 
 	.programme .tab button:hover, 
 	.programme .tab button.active {
-		border: none;
-		font-size: 12px;
-    	color: #7e5cf6!important;
-    	background-color: #e6dcdc;
+	    border-left-width: 1px;
+	    font-size: 12px;
+	    color: #fff!important;
+        background: -webkit-linear-gradient(90deg, #c1affa, #7e5cf6);
+	    background: -o-linear-gradient(90deg, #c1affa, #7e5cf6);
+	    background: -moz-linear-gradient(90deg, #c1affa, #7e5cf6);
+	    background: linear-gradient(90deg, #c1affa, #7e5cf6);
+	    border-color: #b19cfa;
 	}
 	.programme {
 	    padding: 20px 0;
 	}
 	.programme .detail {
-	    float: none;
 	    padding: 4% 0;
 	    width: 100%;
 	}
