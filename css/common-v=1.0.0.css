@@ -781,7 +781,8 @@
     .footer-top {
         display: none!important;
     }
-    .footer-mobile {  
+    .footer-mobile {
+        display: block!important;
         background: #292927 url(../images/bg-footer.jpg) no-repeat right top;
     }
     .ercode {
