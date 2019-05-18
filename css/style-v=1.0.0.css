@@ -541,7 +541,7 @@ canvas {
     font-size: 26px;
 }
 .joinus .header-content h4 {
-	color: #3a3a3a;
+	color: #333;
     font-size: 18px;
 }
 #location .header-content h4 {
@@ -2490,7 +2490,7 @@ a.demo {
     margin: 10px 0 0 30px;
 } 
 .common-item .header-content h4 {
-	color: #3a3a3a;
+	color: #666;
 	font-size: 16px;
     line-height: 30px;
 }
@@ -4063,9 +4063,6 @@ div#timeline {
 	}
 	.about-us-page #banner {
 		margin-top: -57%;
-	}
-	.about-us-page .header-content h4 {
-	    font-size: 14px;
 	}
 	.about-us-page .header-content h1 img {
 		width: 60%;
