@@ -366,174 +366,7 @@
 }
 .tab-content img:first-child {
     margin-right: 20px;
-}
-/* case éƒ¨åˆ† */
-
-.location { 
-    box-sizing: border-box;
-    background-size: auto 100%;
-}
-
-.location .title {
-    text-align: center;
-    font-size: 16px;
-}
-
-.location .title h5 {
-    font-size: 22px;
-    margin: 25px 0;
-}
-
-.location .scrsParent {
-    display: none;
-}
-
-.location .carousel {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    -webkit-perspective: 500px;
-    -moz-perspective: 500px;
-    -o-perspective: 500px;
-    perspective: 500px;
-    overflow: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-.location .carousel>* {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-}
-
-.location .carousel figure {
-    margin: 0;
-    width: 50%;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-transition: -webkit-transform 0.5s;
-    transition: -webkit-transform 0.5s;
-    transition: transform 0.5s;
-    transition: transform 0.5s, -webkit-transform 0.5s;
-}
-
-.location .carousel figure>span {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0 0px;
-    display: block;
-}
-
-.location .carousel figure>span span {
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
-.location .carousel figure>span img {
-    width: 100%;
-}
-
-.location .carousel figure>span i {
-    display: block;
-    position: absolute;
-    overflow: hidden;
-    left: 42px;
-    right: 41px;
-    top: 0;
-    bottom: 100%;
-    border-radius: 10px 10px 0 0;
-    background: url('../img/case/bk.png') center no-repeat;
-    background-size: 100% 100%;
-    transition: all 0.3s;
-}
-
-.location .carousel figure span:hover i {
-    bottom: 16px;
-    /* top: 0px; */
-}
-
-.location .carousel figure>span:not(:first-of-type) {
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-.location .carousel nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin: 20px 0 0;
-}
-
-/* .location .carousel nav button {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-    margin: 0 5px;
-    cursor: pointer;
-    color: #333;
-    background: none;
-    border: 1px solid;
-    letter-spacing: 1px;
-    padding: 5px 10px;
-} */
-
-.location .carousel nav button.prev {
-    position: absolute;
-    top: 48%;
-    right: 0;
-    width: 32px;
-    height: 58px;
-    transform: translate(-50%, 0);
-    background: url('../img/case/next.png') no-repeat;
-    border: 0;
-    outline: none;
-    opacity: 0.8;
-}
-
-.location .carousel nav button.prev:hover {
-    opacity: 1;
-}
-
-.lee-container .dg-lee-container nav span.dg-next {
-    position: absolute;
-    top: -220px;
-    right: -550px;
-    width: 32px;
-    height: 58px;
-    transform: translate(-50%, 0);
-    background: url('../img/case/next.png') no-repeat;
-    border: 0;
-    outline: none;
-    opacity: 0.8;
-}
-
-.lee-container .dg-lee-container nav span.dg-next:hover {
-    opacity: 1;
-}
-
-.location .location-more {
-    width: 148px;
-    margin: -40px auto 0;
-}
-
- 
+} 
 
 .support .overlay {
     padding: 50px 0;
@@ -605,6 +438,7 @@
     display: block;
     margin: 10px 0;
 }
+#job h5,
 #earth h5,
 #world h5,
 #tech .detail h5 {
@@ -672,10 +506,10 @@
     -moz-transition-timing-function: ease-out;
     -ms-transition-timing-function: ease-out;
     -o-transition-timing-function: ease-out;
-    -webkit-transition-duration: .5s;
-    -moz-transition-duration: .5s;
-    -ms-transition-duration: .5s;
-    -o-transition-duration: .5s;
+    -webkit-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -ms-transition-duration: .2s;
+    -o-transition-duration: .2s;
 }
 .support .detail li:hover > img {
     transform: scale(1.1);
