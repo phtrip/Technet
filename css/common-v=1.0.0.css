@@ -221,8 +221,8 @@
     line-height: 28px;
 }
 .why-choose-our .product-list li:hover {
-    box-shadow: 0 0 10px #ccc;
-    background: #ccc!Important;
+    box-shadow: 0 0 30px #ccc;
+    background: #ccc!important;
 }
 .why-choose-our .product-list li:hover > .info{
     background: #fff;
@@ -308,10 +308,11 @@
     font-size: 34px;
 }
 
-.programme .detail h5 {
-    font-size: 24px;
-    margin-top: 20px;
-    color: #333;
+#job.programme .detail h5 {
+    font-size: 24px!Important;
+    margin-top: 20px!Important;
+    color: #303030!Important;
+    text-align: left;
 }
 .programme .detail p {
     color: #666;
@@ -816,7 +817,7 @@
         bottom: 0;
         width: 100%;    
         z-index: 99;
-        box-shadow: 0 0 16px #9a9696;
+        box-shadow: 0 0 16px #cec7c7;
     }
     .footer-nav a {
         color: #333!important;

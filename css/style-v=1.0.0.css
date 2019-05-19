@@ -46,7 +46,7 @@ ul,li {
 }
 
 body {
-	font-family: Microsoft YaHei,Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Arial,"sans-serif";
+	font-family: '微软雅黑',Microsoft YaHei,Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Arial,"sans-serif";
 	overflow-x: hidden;
 } 
 .section-title {
@@ -908,10 +908,13 @@ p.footer-copyright {
     height: 55px;
     line-height: 55px;
     width: 100%;
-    text-align: center;
+    text-align: center;   
+    margin: 0;
+    padding: 0;
+    clear: both;
 }
 .ercode  {
-	margin: 40px 0 0 0;
+	margin: 35px 0 0 0;
 	color: #fff;
 	text-align: center;
 }
@@ -933,7 +936,7 @@ p.footer-copyright {
 	text-align: left;
 }
 .footer .contact-list {
-	margin: 50px 0 0 0;
+	margin: 35px 0 0 0;
 }
 .footer .copyright p a:hover {
 	-webkit-transition: all .5s ease-in-out 0s;
@@ -2429,6 +2432,9 @@ a.demo {
 .common-item {
 	margin: 50px 0 0 0;
 }
+.about-us-page #company.common-item {
+    margin: 180px 0 0 0;
+}
 #boon .container,
 .common-item .container,
 .common-item .container {
@@ -2438,6 +2444,13 @@ a.demo {
 	padding: 50px 0 0 30px;
     margin: 0;
 }
+.about-us-page #company.common-item .header-inner {
+	padding: 50px 0 0 50px;
+}
+.about-us-page #company.common-item .photo-header img{
+    margin: 50px 100px 0 0;
+}
+
 #youshi .row {
 	position: relative;
     width: 85%!important;
@@ -3095,6 +3108,7 @@ div#timeline {
 }
 #aboutus .container {
 	font-size: 0;
+    text-align: center;
 }
 #aboutus img:nth-child(1) {
 	box-shadow: -10px -10px 40px #bfb8b8;
@@ -3125,10 +3139,33 @@ div#timeline {
 .right-part {
     margin: 150px 0 0 0;
 }
-
-
-
-
+.protect-earth .container {
+	background-color: #f6f6f6;
+}
+.protect-earth .col-md-9,
+.protect-earth .col-md-3 {
+	padding: 0;
+}
+.protect-earth .header-inner {
+    padding: 30px 41px 0 20px;
+    margin: 0;
+}
+.protect-earth h3 {
+	color: #3b3b3b;
+	font-size: 24px;
+}
+.protect-earth h4 {
+	color: #777;
+	font-size: 18px;
+    margin-top: 15px;
+}
+.protect-earth h5 {
+	margin-top: 20px;
+}
+.protect-earth .product-list {
+	margin-top: 30px;
+	background-color: #fff;
+}
 
 
 
@@ -3536,6 +3573,12 @@ div#timeline {
 		line-height: 28px;
 		margin: 7% 17%;
 	}
+	.protect-earth .col-md-4 .header-content h4 {
+		margin: 0;
+	}
+	.protect-earth .col-md-4 .header-inner {
+	    padding: 30px 0; 
+	}
 	#company .header-content h4,
 	#youshi .header-content h4 {
 		margin: 10px;
@@ -3837,6 +3880,13 @@ div#timeline {
     	background-position: 0 50px!important;
     	min-height: 150px;
 	}
+	.contact-us-page #banner .overlay {
+	    background-position: 0 50px!important;
+	    min-height: 230px;
+	    background: url(../images/contact-banner-m.jpg) no-repeat;
+	    width: 100%;
+	    background-size: contain;
+	}
  
 	.project-page #banner .header-inner {
 	    margin: 8% 0 0;
@@ -4071,8 +4121,8 @@ div#timeline {
 	.about-us-page .header-content h1 img {
 		width: 60%;
 	}
-	.contact-us-page .header-inner {
-		 margin: 10% 0 0;
+	.contact-us-page #banner .header-inner {
+		 display: none;
 	}
 	.contact-us-page .header-content h4 {
     	font-size: 26px;
@@ -4250,6 +4300,12 @@ div#timeline {
 	    margin: 0 auto;
 	    display: block;
 	    text-align: center;
+
+        height: 220px;
+	    left: 0;
+	    top: 0;
+	    background: url(../images/contact-01-m.jpg) no-repeat;
+	    background-size: contain;
 	}
 	#youshi .txt-bottom li {
 	    float: none;
@@ -4277,7 +4333,13 @@ div#timeline {
 	#home .overlay {
 	    height: 230px;
 	}
+	.contact-us-page #banner .overlay {
+		height: 210px;
+	}
 	.footer-nav a {
 	    width: 18%;
+	}
+	#youshi .left-img {
+		height: 170px;
 	}
 }
