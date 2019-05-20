@@ -4088,7 +4088,8 @@ div#timeline {
     }
     .about-us-page .header-content h4 {
 	    font-size: 16px;
-    	margin: 2% auto;
+    	margin: 2% auto;   
+    	color: #666!important;
 	}
     .mobile-navs dt {
     	height: 45px;    
@@ -4190,6 +4191,7 @@ div#timeline {
 	    line-height: 22px;
 	    font-size: 12px!important;
 	    text-align: left;
+    	color: #666!important;
 	}
 	.joinus .header-inner {
 		margin: 0;
