@@ -3166,8 +3166,12 @@ div#timeline {
 	margin-top: 30px;
 	background-color: #fff;
 }
+.join-us-page #boon .container {
 
-
+}
+.join-us-page #boon .container {
+   padding-left: 50px!important;
+}
 
 
 
@@ -4200,7 +4204,10 @@ div#timeline {
 	.join-us-page #banner .header-content h4 {
     	color: #000;
 	}
-	
+	.join-us-page #boon .container {
+	    padding-left: 15px!important;
+	}
+		
 	.joinus .header-inner {
 		margin: 0;
 	}
