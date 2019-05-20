@@ -4195,7 +4195,9 @@ div#timeline {
 	    font-size: 12px!important;
 	    text-align: left;
 	}
-	.joinus#banner .header-content h4 {
+	.join-us-page #boon .container,
+	.join-us-page #boon .header-content h4 ,
+	.join-us-page #banner .header-content h4 {
     	color: #000;
 	}
 	
