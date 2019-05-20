@@ -3,6 +3,9 @@ ul,li {
 	padding: 0;
 	margin: 0;
 }
+button {
+	outline: none;
+}
  .scroll-down {
     background: url(../images/icons/ico-srcoll.png) no-repeat center bottom;
     background-size: contain;
@@ -2318,7 +2321,11 @@ a.demo {
     background: -moz-linear-gradient(90deg, #c1affa, #7e5cf6);
     background: linear-gradient(90deg, #c1affa, #7e5cf6);
     border: none;
-	
+    text-decoration: none;
+}
+#job .tab-cont button:hover,
+.banner-box .btn-down:hover {
+    background: #7e5cf6;
 }
 .banner-box .title span {
     font-size: 28px;
