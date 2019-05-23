@@ -30,6 +30,11 @@
 </head>
 
 <body>
+    <div id="loading-mask">
+        <div class="loader">
+            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+        </div>
+    </div>
     <header id="home" class="home-page">
         <div class="overlay">
             <nav class="navbar navbar-default nav-sec navbar-fixed-top">
@@ -42,7 +47,7 @@
                             <span class="icon-bar"></span>
                         </button>
                         <a class="navbar-brand" href="index.html">
-                            <img src="images/icons/logo.png" alt="Logo" id="tyLogo">
+                            <img class="lazy" src="images/placeholder.jpg" data-original="images/icons/logo.png" alt="Logo" id="tyLogo">
                         </a>
                     </div>
                     <div class="navbar-collapse collapse">
@@ -106,7 +111,7 @@
         <div class="banner-box">
             <div class="title txt">
                 <p class="wow fadeInLeft home-title" data-wow-delay="0.2s" data-wow-duration="1s">
-                    <img src="images/icons/home-title.png">
+                    <img class="lazy" src="images/placeholder.jpg" data-original="images/icons/home-title.png">
                 </p>
                 <span class="wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="1s">
                     Brought us before the wind  we continue beyond
@@ -129,21 +134,21 @@
                             <h6>企业<span>文化</span></h6>
                             <p>Our culture</p>
                         </div>
-                        <img src="images/home-top-01.jpg" alt="">
+                        <img class="lazy" src="images/placeholder.jpg" data-original="images/home-top-01.jpg" alt="">
                     </li>
                     <li class="wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1s">
                         <div class="hover-cont">
                             <h6>企业<span>责任</span></h6>
                             <p>Our respibsibility</p>
                         </div>
-                        <img src="images/home-top-02.jpg" alt="">
+                        <img class="lazy" src="images/placeholder.jpg" data-original="images/home-top-02.jpg" alt="">
                     </li>
                     <li class="wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="1s">
                         <div class="hover-cont">
                             <h6>人才<span>发展</span></h6>
                             <p>Our development</p>
                         </div>
-                        <img src="images/home-top-03.jpg" alt="">
+                        <img class="lazy" src="images/placeholder.jpg" data-original="images/home-top-03.jpg" alt="">
                     </li>
                 </ul>
                 <div class="clr"></div>
@@ -161,21 +166,21 @@
                             <h6>集团简介</h6>
                             <p>带你走进Technet集团</p>
                         </div>
-                        <img src="images/home-mid-01.jpg" alt="">
+                        <img class="lazy" src="images/placeholder.jpg" data-original="images/home-mid-01.jpg" alt="">
                     </li>
                     <li class="wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1s">
                         <div class="hover-cont">
                             <h6>地理位置</h6>
                             <p>依山傍水彰显胸怀</p>
                         </div>
-                        <img src="images/home-mid-02.jpg" alt="">
+                        <img class="lazy" src="images/placeholder.jpg" data-original="images/home-mid-02.jpg" alt="">
                     </li>
                     <li class="wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="1s">
                         <div class="hover-cont">
                             <h6>专业专注</h6>
                             <p>致力于打造云科技网络技术</p>
                         </div>
-                        <img src="images/home-mid-03.jpg" alt="">
+                        <img class="lazy" src="images/placeholder.jpg" data-original="images/home-mid-03.jpg" alt="">
                     </li>
                 </ul>
                 <div class="clr"></div>
@@ -189,7 +194,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-sm-6">
-                    <img src="images/home-mid-04.jpg" alt="ty" class="img-responsive wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="1s">
+                    <img class="lazy" src="images/placeholder.jpg" data-original="images/home-mid-04.jpg" alt="ty" class="img-responsive wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="1s">
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="header-inner">
@@ -206,7 +211,7 @@
                 <ul>
                     <li class="wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeInUp;">
                         <div class="icon">
-                            <img src="images/home-bottom-01.jpg" alt="">
+                            <img class="lazy" src="images/placeholder.jpg" data-original="images/home-bottom-01.jpg" alt="">
                         </div>
                         <div class="info">
                             <span>智能零售</span>
@@ -215,7 +220,7 @@
                     </li>
                     <li class="wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.4s; animation-name: fadeInUp;">
                         <div class="icon">
-                            <img src="images/home-bottom-02.jpg" alt="">
+                            <img class="lazy" src="images/placeholder.jpg" data-original="images/home-bottom-02.jpg" alt="">
                         </div>
                         <div class="info">
                             <span>大数据</span>
@@ -224,7 +229,7 @@
                     </li>
                     <li class="wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.6s; animation-name: fadeInUp;">
                         <div class="icon">
-                            <img src="images/home-bottom-03.jpg" alt="">
+                            <img class="lazy" src="images/placeholder.jpg" data-original="images/home-bottom-03.jpg" alt="">
                         </div>
                         <div class="info">
                             <span>守护绿色家园</span>
@@ -381,28 +386,28 @@
             <ul>
                 <li class="wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeInUp;">
                     <div class="icon">
-                        <img src="images/icons/ico-home-01.jpg" alt="">
+                        <img class="lazy" src="images/placeholder.jpg" data-original="images/icons/ico-home-01.jpg" alt="">
                     </div>
                     <span>亚洲第一科技平台</span>
                     <p>用心描绘用户心中的蓝图</p>
                 </li>
                 <li class="wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.4s; animation-name: fadeInUp;">
                     <div class="icon">
-                        <img src="images/icons/ico-home-02.jpg" alt="">
+                        <img class="lazy" src="images/placeholder.jpg" data-original="images/icons/ico-home-02.jpg" alt="">
                     </div>
                     <span>全球遍布拓展业务</span>
                     <p>业务拓展遍布全球各个角落</p>
                 </li>
                 <li class="wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.6s; animation-name: fadeInUp;">
                     <div class="icon">
-                        <img src="images/icons/ico-home-03.jpg" alt="">
+                        <img class="lazy" src="images/placeholder.jpg" data-original="images/icons/ico-home-03.jpg" alt="">
                     </div>
                     <span>娱乐服务项目节点达亿万级</span>
                     <p>顶级服务器 顶级游戏体验</p>
                 </li>
                 <li class="wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.8s; animation-name: fadeInUp;">
                     <div class="icon">
-                        <img src="images/icons/ico-home-04.jpg" alt="">
+                        <img class="lazy" src="images/placeholder.jpg" data-original="images/icons/ico-home-04.jpg" alt="">
                     </div>
                     <span>强劲的产业链</span>
                     <p>行业的永动机</p>
@@ -449,11 +454,11 @@
                     <div class="ercode clearfix">
                         <div class="wx-code fr">
                             <p>微信二维码</p>
-                            <img src="images/ercode-wx.jpg">
+                            <img class="lazy" src="images/placeholder.jpg" data-original="images/ercode-wx.jpg">
                         </div>
                         <div class="qq-code fr">
                             <p>QQ二维码</p>
-                            <img src="images/ercode-qq.jpg">
+                            <img class="lazy" src="images/placeholder.jpg" data-original="images/ercode-qq.jpg">
                         </div>
                     </div>
                 </div>
@@ -463,11 +468,11 @@
             <div class="ercode clearfix">
                 <div class="wx-code fr">
                     <p>微信二维码</p>
-                    <img src="images/ercode-wx.jpg">
+                    <img class="lazy" src="images/placeholder.jpg" data-original="images/ercode-wx.jpg">
                 </div>
                 <div class="qq-code fr">
                     <p>QQ二维码</p>
-                    <img src="images/ercode-qq.jpg">
+                    <img class="lazy" src="images/placeholder.jpg" data-original="images/ercode-qq.jpg">
                 </div>
             </div>
             <ul>
@@ -502,6 +507,11 @@
     <script type="text/javascript">
         $("#tech .detail li,.mobile-navs dl").on("click", function(){
             $(this).toggleClass("opened")
+        })
+    </script>
+    <script type="text/javascript">
+        $(function(){
+            $('img').lazyload();
         })
     </script>
 </body>
