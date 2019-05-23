@@ -4409,6 +4409,12 @@ div#timeline {
 	.about-us-page #company.common-item .photo-header img {
 		margin: 0;
 	}
+	.lazy {
+		width: 100%;
+	}
+	#advantage .product-list ul li .icon .lazy {
+		width: auto;
+	}
 }
 @media only screen and (min-width:370px) and (max-width:380px) {
 	 #home .overlay {
