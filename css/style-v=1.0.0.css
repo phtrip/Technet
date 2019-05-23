@@ -2285,6 +2285,9 @@ a.demo {
 	margin: 0;
 	padding: 0;
 }
+.mt20 {
+	margin-top: 20px;
+}
 .mt30 {
 	margin-top: 30px;
 }
@@ -2420,6 +2423,7 @@ a.demo {
 
 .project-page #banner .overlay {
 	background: #151316  url(../images/project-banner.jpg) no-repeat;
+    min-height: 435px;
 }
 .fund-ad-page #banner .overlay {
 	background: url('../images/fund-ad-banner.jpg') no-repeat;
